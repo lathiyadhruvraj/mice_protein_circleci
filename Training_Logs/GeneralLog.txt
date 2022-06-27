@@ -1,0 +1,17 @@
+2022-06-19/22:47:25		GoodRaw directory deleted successfully!!!
+2022-06-19/22:47:25		Bad files moved to archive
+2022-06-19/22:47:25		Bad Raw Data Folder Deleted successfully!!
+2022-06-25/22:03:11		GoodRaw directory deleted successfully!!!
+2022-06-25/22:03:11		Bad files moved to archive
+2022-06-25/22:03:11		Bad Raw Data Folder Deleted successfully!!
+2022-06-25/22:52:40		GoodRaw directory deleted successfully!!!
+2022-06-25/22:52:40		Bad files moved to archive
+2022-06-25/22:52:40		Bad Raw Data Folder Deleted successfully!!
+2022-06-25/23:36:37		GoodRaw directory deleted successfully!!!
+2022-06-25/23:36:37		Bad files moved to archive
+2022-06-25/23:36:37		Bad Raw Data Folder Deleted successfully!!
+2022-06-26/00:04:44		BadRaw directory deleted before starting validation!!!
+2022-06-26/00:04:44		GoodRaw directory deleted successfully!!!
+2022-06-26/00:07:16		GoodRaw directory deleted successfully!!!
+2022-06-26/00:07:16		Bad files moved to archive
+2022-06-26/00:07:16		Bad Raw Data Folder Deleted successfully!!

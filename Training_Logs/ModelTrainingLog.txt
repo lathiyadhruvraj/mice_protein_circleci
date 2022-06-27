@@ -1,0 +1,424 @@
+2022-06-19/22:47:27		Start of Training
+2022-06-19/22:47:27		Entered the get_data method of the Data_Getter class
+2022-06-19/22:47:27		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-19/22:47:27		Entered the remove_columns method of the Preprocessor class
+2022-06-19/22:47:27		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-19/22:47:27		Entered the separate_label_feature method of the Preprocessor class
+2022-06-19/22:47:27		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-19/22:47:27		Entered the encode_label method of the Preprocessor class
+2022-06-19/22:47:27		Exited  the encode_label method of the Preprocessor class
+2022-06-19/22:47:27		Entered the is_null_present method of the Preprocessor class
+2022-06-19/22:47:27		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-19/22:47:27		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-19/22:47:28		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-19/22:47:28		Entered the remove_columns method of the Preprocessor class
+2022-06-19/22:47:28		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-19/22:47:28		Entered the remove_outliers method of the Preprocessor class
+2022-06-19/22:47:29		Exited the remove_outliers method of the Preprocessor class
+2022-06-19/22:47:29		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-19/22:47:37		Exited the reduce_dim method and saved plot at plots\pca.png
+2022-06-19/22:47:37		Entered the cal_components method of the Preprocessor class
+2022-06-19/22:47:37		Exited the cal_components method of the Preprocessor class
+2022-06-19/22:47:37		Entered the pca_with_comp method of the Preprocessor class
+2022-06-19/22:47:38		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-19/22:47:38		Entered the elbow_plot method of the KMeansClustering class
+2022-06-19/22:47:49		The optimum number of clusters is: 6 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-19/22:47:49		Entered the create_clusters method of the KMeansClustering class
+2022-06-19/22:47:49		Entered the save_model method of the File_Operation class
+2022-06-19/22:47:49		Model File KMeanssaved. Exited the save_model method of the Model_Finder class
+2022-06-19/22:47:49		successfully created 6clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-19/22:47:49		Entered the get_best_model method of the Model_Finder class
+2022-06-19/22:47:49		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/22:51:15		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 4, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/22:51:15		precision_score for XGBoost:0.8928571428571428
+2022-06-19/22:51:15		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/22:53:13		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/22:53:13		precision_score for RF:0.9398148148148149
+2022-06-19/22:53:13		Entered the save_model method of the File_Operation class
+2022-06-19/22:53:13		Model File RandomForest4saved. Exited the save_model method of the Model_Finder class
+2022-06-19/22:53:13		Entered the get_best_model method of the Model_Finder class
+2022-06-19/22:53:13		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/22:56:51		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 4, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/22:56:51		precision_score for XGBoost:0.8728070175438596
+2022-06-19/22:56:51		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/22:58:47		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 50}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/22:58:47		precision_score for RF:0.9052287581699346
+2022-06-19/22:58:47		Entered the save_model method of the File_Operation class
+2022-06-19/22:58:47		Model File RandomForest2saved. Exited the save_model method of the Model_Finder class
+2022-06-19/22:58:47		Entered the get_best_model method of the Model_Finder class
+2022-06-19/22:58:47		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:02:18		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:02:19		precision_score for XGBoost:0.8551724137931034
+2022-06-19/23:02:19		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:04:18		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 150}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:04:18		precision_score for RF:0.9838709677419355
+2022-06-19/23:04:18		Entered the save_model method of the File_Operation class
+2022-06-19/23:04:18		Model File RandomForest3saved. Exited the save_model method of the Model_Finder class
+2022-06-19/23:04:18		Entered the get_best_model method of the Model_Finder class
+2022-06-19/23:04:18		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:07:53		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 4, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:07:53		precision_score for XGBoost:0.8416666666666667
+2022-06-19/23:07:53		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:10:02		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:10:02		precision_score for RF:0.85
+2022-06-19/23:10:02		Entered the save_model method of the File_Operation class
+2022-06-19/23:10:02		Model File RandomForest1saved. Exited the save_model method of the Model_Finder class
+2022-06-19/23:10:02		Entered the get_best_model method of the Model_Finder class
+2022-06-19/23:10:02		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:12:54		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 4, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:12:54		precision_score for XGBoost:0.9833333333333334
+2022-06-19/23:12:54		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:14:53		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:14:53		precision_score for RF:0.9833333333333334
+2022-06-19/23:14:53		Entered the save_model method of the File_Operation class
+2022-06-19/23:14:53		Model File RandomForest0saved. Exited the save_model method of the Model_Finder class
+2022-06-19/23:14:53		Entered the get_best_model method of the Model_Finder class
+2022-06-19/23:14:53		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:18:27		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-19/23:18:27		precision_score for XGBoost:0.9648692810457515
+2022-06-19/23:18:27		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:19:29		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 150}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-19/23:19:29		precision_score for RF:0.971875
+2022-06-19/23:19:29		Entered the save_model method of the File_Operation class
+2022-06-19/23:19:30		Model File RandomForest5saved. Exited the save_model method of the Model_Finder class
+2022-06-19/23:19:30		Successful End of Training
+2022-06-25/22:03:11		Start of Training
+2022-06-25/22:03:11		Entered the get_data method of the Data_Getter class
+2022-06-25/22:03:12		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-25/22:03:12		Entered the remove_columns method of the Preprocessor class
+2022-06-25/22:03:12		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/22:03:12		Entered the separate_label_feature method of the Preprocessor class
+2022-06-25/22:03:12		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-25/22:03:12		Entered the encode_label method of the Preprocessor class
+2022-06-25/22:03:12		Exited  the encode_label method of the Preprocessor class
+2022-06-25/22:03:12		Entered the is_null_present method of the Preprocessor class
+2022-06-25/22:03:12		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-25/22:03:12		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/22:03:13		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/22:03:13		Entered the remove_columns method of the Preprocessor class
+2022-06-25/22:03:13		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/22:03:13		Entered the remove_outliers method of the Preprocessor class
+2022-06-25/22:03:14		Exited the remove_outliers method of the Preprocessor class
+2022-06-25/22:03:14		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-25/22:03:16		Exited the reduce_dim method and saved plot at plots\pca.png
+2022-06-25/22:03:16		Entered the cal_components method of the Preprocessor class
+2022-06-25/22:03:16		Exited the cal_components method of the Preprocessor class
+2022-06-25/22:03:16		Entered the pca_with_comp method of the Preprocessor class
+2022-06-25/22:03:16		TOTAL PCA : -----------------  16
+2022-06-25/22:03:16		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-25/22:03:16		Entered the elbow_plot method of the KMeansClustering class
+2022-06-25/22:03:45		The optimum number of clusters is: 6 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-25/22:03:45		Entered the create_clusters method of the KMeansClustering class
+2022-06-25/22:03:45		Entered the save_model method of the File_Operation class
+2022-06-25/22:03:45		Model File KMeanssaved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:03:45		successfully created 6clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-25/22:03:45		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:03:45		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:07:21		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:07:21		precision_score for XGBoost:0.7793981481481481
+2022-06-25/22:07:21		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:09:03		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 50}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:09:03		precision_score for RF:0.811111111111111
+2022-06-25/22:09:03		Entered the save_model method of the File_Operation class
+2022-06-25/22:09:03		Model File RandomForest5saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:09:03		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:09:03		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:12:00		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 300}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:12:00		precision_score for XGBoost:0.8467948717948718
+2022-06-25/22:12:00		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:13:07		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:13:07		precision_score for RF:0.8094375431331953
+2022-06-25/22:13:07		Entered the save_model method of the File_Operation class
+2022-06-25/22:13:07		Model File XGBoost2saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:13:07		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:13:07		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:16:12		XGBoost best params: {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:16:12		precision_score for XGBoost:0.8497474747474748
+2022-06-25/22:16:12		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:17:21		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:17:21		precision_score for RF:0.9666666666666667
+2022-06-25/22:17:21		Entered the save_model method of the File_Operation class
+2022-06-25/22:17:21		Model File RandomForest4saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:17:21		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:17:21		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:20:18		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:20:18		precision_score for XGBoost:0.6880952380952381
+2022-06-25/22:20:18		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:21:16		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 150}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:21:16		precision_score for RF:0.8238095238095238
+2022-06-25/22:21:16		Entered the save_model method of the File_Operation class
+2022-06-25/22:21:16		Model File RandomForest0saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:21:16		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:21:16		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:23:23		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:23:23		precision_score for XGBoost:0.9607142857142857
+2022-06-25/22:23:23		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:24:21		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 150}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:24:21		precision_score for RF:1.0
+2022-06-25/22:24:21		Entered the save_model method of the File_Operation class
+2022-06-25/22:24:21		Model File RandomForest1saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:24:21		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:24:21		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:27:03		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 4, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:27:03		precision_score for XGBoost:0.91875
+2022-06-25/22:27:03		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:27:57		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:27:57		precision_score for RF:0.9508928571428572
+2022-06-25/22:27:57		Entered the save_model method of the File_Operation class
+2022-06-25/22:27:57		Model File RandomForest3saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:27:57		Successful End of Training
+2022-06-25/22:52:40		Start of Training
+2022-06-25/22:52:40		Entered the get_data method of the Data_Getter class
+2022-06-25/22:52:40		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-25/22:52:40		Entered the remove_columns method of the Preprocessor class
+2022-06-25/22:52:40		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/22:52:40		Entered the separate_label_feature method of the Preprocessor class
+2022-06-25/22:52:40		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-25/22:52:40		Entered the encode_label method of the Preprocessor class
+2022-06-25/22:52:40		Exited  the encode_label method of the Preprocessor class
+2022-06-25/22:52:40		Entered the is_null_present method of the Preprocessor class
+2022-06-25/22:52:40		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-25/22:52:40		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/22:52:41		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/22:52:41		Entered the remove_columns method of the Preprocessor class
+2022-06-25/22:52:41		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/22:52:41		Entered the remove_outliers method of the Preprocessor class
+2022-06-25/22:52:41		Exited the remove_outliers method of the Preprocessor class
+2022-06-25/22:52:41		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-25/22:52:45		Exited the reduce_dim method and saved plot at plots\pca.png
+2022-06-25/22:52:45		Entered the cal_components method of the Preprocessor class
+2022-06-25/22:52:45		Exited the cal_components method of the Preprocessor class
+2022-06-25/22:52:45		Entered the pca_with_comp method of the Preprocessor class
+2022-06-25/22:52:45		TOTAL PCA : -----------------  22
+2022-06-25/22:52:45		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-25/22:52:45		Entered the elbow_plot method of the KMeansClustering class
+2022-06-25/22:52:54		The optimum number of clusters is: 6 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-25/22:52:54		Entered the create_clusters method of the KMeansClustering class
+2022-06-25/22:52:54		Entered the save_model method of the File_Operation class
+2022-06-25/22:52:54		Model File KMeanssaved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:52:54		successfully created 6clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-25/22:52:54		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:52:54		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:55:16		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:55:16		precision_score for XGBoost:0.8764430014430014
+2022-06-25/22:55:16		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:56:22		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 150}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/22:56:22		precision_score for RF:0.8972222222222223
+2022-06-25/22:56:22		Entered the save_model method of the File_Operation class
+2022-06-25/22:56:22		Model File RandomForest2saved. Exited the save_model method of the Model_Finder class
+2022-06-25/22:56:22		Entered the get_best_model method of the Model_Finder class
+2022-06-25/22:56:22		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:59:06		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/22:59:06		precision_score for XGBoost:0.9230859010270774
+2022-06-25/22:59:06		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:00:13		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 50}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:00:13		precision_score for RF:0.7210038986354776
+2022-06-25/23:00:13		Entered the save_model method of the File_Operation class
+2022-06-25/23:00:13		Model File XGBoost5saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:00:13		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:00:13		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:02:51		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 4, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:02:51		precision_score for XGBoost:0.8821428571428571
+2022-06-25/23:02:51		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:03:58		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:03:58		precision_score for RF:1.0
+2022-06-25/23:03:58		Entered the save_model method of the File_Operation class
+2022-06-25/23:03:58		Model File RandomForest4saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:03:58		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:03:58		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:06:38		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:06:38		precision_score for XGBoost:0.7476190476190476
+2022-06-25/23:06:38		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:07:37		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 50}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:07:37		precision_score for RF:0.5245192307692308
+2022-06-25/23:07:37		Entered the save_model method of the File_Operation class
+2022-06-25/23:07:37		Model File XGBoost1saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:07:37		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:07:37		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:09:45		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 4, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:09:45		precision_score for XGBoost:0.9723809523809525
+2022-06-25/23:09:45		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:10:39		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:10:39		precision_score for RF:0.9833333333333334
+2022-06-25/23:10:39		Entered the save_model method of the File_Operation class
+2022-06-25/23:10:39		Model File RandomForest3saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:10:39		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:10:39		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:13:35		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:13:35		precision_score for XGBoost:0.9129464285714286
+2022-06-25/23:13:35		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:14:32		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:14:32		precision_score for RF:0.9449197860962567
+2022-06-25/23:14:32		Entered the save_model method of the File_Operation class
+2022-06-25/23:14:32		Model File RandomForest0saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:14:32		Successful End of Training
+2022-06-25/23:36:37		Start of Training
+2022-06-25/23:36:37		Entered the get_data method of the Data_Getter class
+2022-06-25/23:36:38		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-25/23:36:38		Entered the remove_columns method of the Preprocessor class
+2022-06-25/23:36:38		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/23:36:38		Entered the separate_label_feature method of the Preprocessor class
+2022-06-25/23:36:38		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-25/23:36:38		Entered the encode_label method of the Preprocessor class
+2022-06-25/23:36:38		Exited  the encode_label method of the Preprocessor class
+2022-06-25/23:36:38		Entered the is_null_present method of the Preprocessor class
+2022-06-25/23:36:38		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-25/23:36:38		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/23:36:38		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-25/23:36:38		Entered the remove_columns method of the Preprocessor class
+2022-06-25/23:36:38		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-25/23:36:38		Entered the remove_outliers method of the Preprocessor class
+2022-06-25/23:36:38		Exited the remove_outliers method of the Preprocessor class
+2022-06-25/23:36:38		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-25/23:36:40		Exited the reduce_dim method and saved plot at plots\pca.png
+2022-06-25/23:36:40		Entered the cal_components method of the Preprocessor class
+2022-06-25/23:36:40		Exited the cal_components method of the Preprocessor class
+2022-06-25/23:36:40		Entered the pca_with_comp method of the Preprocessor class
+2022-06-25/23:36:40		TOTAL PCA : -----------------  22
+2022-06-25/23:36:40		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-25/23:36:40		Entered the elbow_plot method of the KMeansClustering class
+2022-06-25/23:36:49		The optimum number of clusters is: 6 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-25/23:36:49		Entered the create_clusters method of the KMeansClustering class
+2022-06-25/23:36:49		Entered the save_model method of the File_Operation class
+2022-06-25/23:36:49		Model File KMeanssaved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:36:49		successfully created 6clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-25/23:36:50		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:36:50		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:37:55		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:37:55		precision_score for XGBoost:0.8764430014430014
+2022-06-25/23:37:55		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:38:48		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 160}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:38:48		precision_score for RF:0.853505291005291
+2022-06-25/23:38:48		Entered the save_model method of the File_Operation class
+2022-06-25/23:38:48		Model File XGBoost2saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:38:48		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:38:48		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:40:04		XGBoost best params: {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:40:04		precision_score for XGBoost:0.8964556277056276
+2022-06-25/23:40:04		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:40:54		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 160}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:40:54		precision_score for RF:0.7210038986354776
+2022-06-25/23:40:54		Entered the save_model method of the File_Operation class
+2022-06-25/23:40:54		Model File XGBoost5saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:40:54		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:40:54		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:42:06		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 4, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:42:06		precision_score for XGBoost:0.9325980392156863
+2022-06-25/23:42:06		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:42:57		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 80}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:42:57		precision_score for RF:0.9952380952380953
+2022-06-25/23:42:57		Entered the save_model method of the File_Operation class
+2022-06-25/23:42:57		Model File RandomForest4saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:42:57		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:42:57		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:44:09		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:44:09		precision_score for XGBoost:0.7455357142857143
+2022-06-25/23:44:09		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:45:01		Random Forest best params: {'criterion': 'gini', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 160}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:45:01		precision_score for RF:0.7129120879120879
+2022-06-25/23:45:01		Entered the save_model method of the File_Operation class
+2022-06-25/23:45:01		Model File XGBoost1saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:45:01		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:45:01		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:46:00		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 5, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:46:00		precision_score for XGBoost:0.9833333333333334
+2022-06-25/23:46:00		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:46:52		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 100}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:46:52		precision_score for RF:0.9833333333333334
+2022-06-25/23:46:52		Entered the save_model method of the File_Operation class
+2022-06-25/23:46:52		Model File RandomForest3saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:46:52		Entered the get_best_model method of the Model_Finder class
+2022-06-25/23:46:52		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:48:13		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 4, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-25/23:48:13		precision_score for XGBoost:0.9288194444444444
+2022-06-25/23:48:13		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:49:05		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 125}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-25/23:49:05		precision_score for RF:0.9772727272727273
+2022-06-25/23:49:05		Entered the save_model method of the File_Operation class
+2022-06-25/23:49:05		Model File RandomForest0saved. Exited the save_model method of the Model_Finder class
+2022-06-25/23:49:05		Successful End of Training
+2022-06-26/00:07:16		Start of Training
+2022-06-26/00:07:16		Entered the get_data method of the Data_Getter class
+2022-06-26/00:07:16		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-26/00:07:16		Entered the remove_columns method of the Preprocessor class
+2022-06-26/00:07:16		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-26/00:07:16		Entered the separate_label_feature method of the Preprocessor class
+2022-06-26/00:07:16		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-26/00:07:16		Entered the encode_label method of the Preprocessor class
+2022-06-26/00:07:16		Exited  the encode_label method of the Preprocessor class
+2022-06-26/00:07:16		Entered the is_null_present method of the Preprocessor class
+2022-06-26/00:07:16		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-26/00:07:16		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-26/00:07:16		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-26/00:07:16		Entered the remove_columns method of the Preprocessor class
+2022-06-26/00:07:16		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-26/00:07:16		Entered the remove_outliers method of the Preprocessor class
+2022-06-26/00:07:16		Exited the remove_outliers method of the Preprocessor class
+2022-06-26/00:07:16		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-26/00:07:17		Exited the reduce_dim method and saved plot at plots\pca.png
+2022-06-26/00:07:17		Entered the cal_components method of the Preprocessor class
+2022-06-26/00:07:17		Exited the cal_components method of the Preprocessor class
+2022-06-26/00:07:17		Entered the pca_with_comp method of the Preprocessor class
+2022-06-26/00:07:17		TOTAL PCA : -----------------  22
+2022-06-26/00:07:17		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-26/00:07:17		Entered the elbow_plot method of the KMeansClustering class
+2022-06-26/00:07:25		The optimum number of clusters is: 6 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-26/00:07:25		Entered the create_clusters method of the KMeansClustering class
+2022-06-26/00:07:25		Entered the save_model method of the File_Operation class
+2022-06-26/00:07:25		Model File KMeanssaved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:07:25		successfully created 6clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-26/00:07:25		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:07:25		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:08:30		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 3, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:08:30		precision_score for XGBoost:0.8764430014430014
+2022-06-26/00:08:30		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:09:59		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 125}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:09:59		precision_score for RF:0.8817460317460317
+2022-06-26/00:09:59		Entered the save_model method of the File_Operation class
+2022-06-26/00:09:59		Model File RandomForest2saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:09:59		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:09:59		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:11:16		XGBoost best params: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:11:16		precision_score for XGBoost:0.8607843137254902
+2022-06-26/00:11:16		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:12:47		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 250}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:12:47		precision_score for RF:0.9027777777777777
+2022-06-26/00:12:47		Entered the save_model method of the File_Operation class
+2022-06-26/00:12:47		Model File RandomForest5saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:12:47		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:12:47		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:13:58		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 4, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:13:58		precision_score for XGBoost:0.9279761904761905
+2022-06-26/00:13:58		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:15:31		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 175}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:15:31		precision_score for RF:0.9952380952380953
+2022-06-26/00:15:31		Entered the save_model method of the File_Operation class
+2022-06-26/00:15:31		Model File RandomForest4saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:15:31		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:15:31		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:16:45		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 3, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:16:45		precision_score for XGBoost:0.7610722610722611
+2022-06-26/00:16:45		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:18:12		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'auto', 'n_estimators': 175}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:18:12		precision_score for RF:0.7142857142857143
+2022-06-26/00:18:12		Entered the save_model method of the File_Operation class
+2022-06-26/00:18:12		Model File XGBoost1saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:18:12		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:18:12		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:19:10		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 5, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:19:10		precision_score for XGBoost:0.9833333333333334
+2022-06-26/00:19:10		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:20:43		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 300}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:20:43		precision_score for RF:0.9833333333333334
+2022-06-26/00:20:43		Entered the save_model method of the File_Operation class
+2022-06-26/00:20:43		Model File RandomForest3saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:20:43		Entered the get_best_model method of the Model_Finder class
+2022-06-26/00:20:43		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:22:04		XGBoost best params: {'learning_rate': 0.6, 'max_depth': 4, 'n_estimators': 80}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-26/00:22:04		precision_score for XGBoost:0.9288194444444444
+2022-06-26/00:22:04		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:23:42		Random Forest best params: {'criterion': 'entropy', 'max_depth': 4, 'max_features': 'log2', 'n_estimators': 300}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2022-06-26/00:23:42		precision_score for RF:0.9736111111111111
+2022-06-26/00:23:42		Entered the save_model method of the File_Operation class
+2022-06-26/00:23:42		Model File RandomForest0saved. Exited the save_model method of the Model_Finder class
+2022-06-26/00:23:42		Successful End of Training

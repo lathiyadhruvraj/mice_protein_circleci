@@ -1,0 +1,5 @@
+2022-06-19/22:47:25		 mice_protein_19062022_224359.xls: File loaded successfully!!
+2022-06-25/22:03:11		 mice_protein_25062022_220019.xls: File loaded successfully!!
+2022-06-25/22:52:40		 mice_protein_25062022_224907.xls: File loaded successfully!!
+2022-06-25/23:36:37		 mice_protein_25062022_233327.xls: File loaded successfully!!
+2022-06-26/00:07:16		 mice_protein_26062022_000441.xls: File loaded successfully!!

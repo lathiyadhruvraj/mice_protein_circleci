@@ -1,0 +1,21 @@
+2022-06-19/22:44:08		Tables created successfully!!
+2022-06-19/22:44:08		Closed Training database successfully
+2022-06-25/21:20:36		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-25/21:20:36		Closed database successfully
+2022-06-25/21:30:52		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-25/21:31:03		Table Table_mice_protein_09272021_170000 created successfully!!
+2022-06-25/21:31:03		Closed database successfully
+2022-06-25/22:00:29		Tables created successfully!!
+2022-06-25/22:00:29		Closed Training database successfully
+2022-06-25/22:49:12		Tables created successfully!!
+2022-06-25/22:49:12		Closed Training database successfully
+2022-06-25/23:33:31		Tables created successfully!!
+2022-06-25/23:33:31		Closed Training database successfully
+2022-06-26/00:03:31		Tables created successfully!!
+2022-06-26/00:03:31		Closed Training database successfully
+2022-06-26/00:04:45		Tables created successfully!!
+2022-06-26/00:04:45		Closed Training database successfully
+2022-06-26/00:44:48		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-26/00:45:02		Table Table_mice_protein_09272021_170000 created successfully!!
+2022-06-26/00:45:02		Closed database successfully
+2022-06-27/15:55:00		Closed database successfully
