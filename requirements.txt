@@ -38,3 +38,4 @@ xgboost
 xlrd
 xlwt
 zipp
+pytest
