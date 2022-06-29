@@ -175,9 +175,9 @@ def download_file():
         flash(e, "error")
         return render_template('index.html')
 
-port = int(os.getenv('PORT', 5001))
+port = int(os.getenv('PORT', 5000))
 if __name__ == "__main__":
-    host= '127.0.0.1'
+    host= '0.0.0.0'
     httpd = make_server(host=host, port=port, app=app)
     httpd.serve_forever()
     # app.run(debug=True, host=host, port=port)
