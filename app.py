@@ -48,10 +48,10 @@ def predictRouteClient():
 
         if request.form is not None:
             path = ""
-            if (request.form['button'] == "Predict My Files") and (upload == 1):
+            if (request.form.get('button') == "Predict My Files") and (upload == 1):
                 path = "Prediction_Custom_Files"
                 print('custom call')
-            elif request.form['button'] == "Predict Default Files":
+            elif request.form.get('button') == "Predict Default Files":
                 flash("DATASTAX ASTRA Hibernates the database if not used with in 24 hrs.", "info")
                 flash("Contact 7383857575 to activate & see it working", "info")
                 path = "Prediction_Batch_Files"
