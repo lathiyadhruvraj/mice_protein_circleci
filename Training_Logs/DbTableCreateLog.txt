@@ -23,3 +23,19 @@
 2022-06-30/18:05:49		Closed database successfully
 2022-06-30/20:23:15		Table Table_mice_protein_09272021_160002 created successfully!!
 2022-06-30/20:23:15		Closed database successfully
+2022-06-30/21:19:35		Table Table_mice_protein_30062022_211913 created successfully!!
+2022-06-30/21:19:35		Closed database successfully
+2022-06-30/21:21:21		Table Table_mice_protein_30062022_212108 created successfully!!
+2022-06-30/21:21:21		Closed database successfully
+2022-06-30/21:22:05		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-30/21:22:05		Closed database successfully
+2022-06-30/21:30:17		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-30/21:30:17		Closed database successfully
+2022-06-30/21:31:04		Table Table_mice_protein_30062022_213051 created successfully!!
+2022-06-30/21:31:04		Closed database successfully
+2022-06-30/21:36:30		Table Table_mice_protein_30062022_213618 created successfully!!
+2022-06-30/21:36:30		Closed database successfully
+2022-06-30/23:25:27		Table Table_mice_protein_30062022_232508 created successfully!!
+2022-06-30/23:25:27		Closed database successfully
+2022-06-30/23:39:39		Table Table_mice_protein_30062022_233917 created successfully!!
+2022-06-30/23:39:39		Closed database successfully
