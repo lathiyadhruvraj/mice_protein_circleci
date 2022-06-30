@@ -150,6 +150,7 @@ def upload_files():
         return render_template('index.html')
 
     except Exception as e:
+        flash(f"Caught Exception = {e}", "error")
         flash(" File Not Uploaded. Make sure you are selecting a file", "error")
         return render_template('index.html')
 
