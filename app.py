@@ -52,8 +52,6 @@ def predictRouteClient():
                 path = "Prediction_Custom_Files"
                 print('custom call')
             elif request.form['button'] == "Predict Default Files":
-                flash("This Will Take Huge Time, Connect DataStax_Astra Database -> Fetch Files -> Predict them -> Return Output", "warn")
-                flash("This can give error if DATASTAX ASTRA has HIBERNATED the database ", "warn")
                 flash("DATASTAX ASTRA Hibernates the database if not used with in 24 hrs.", "info")
                 flash("Contact 7383857575 to activate & see it working", "info")
                 path = "Prediction_Batch_Files"
@@ -82,7 +80,7 @@ def predictRouteClient():
     except Exception as e:
         predict = 0
         flash(f"Caught Exception: {e}", "warn")
-        flash("Solution: Make sure you are selecting atleast 1 file with proper .xls Format AND Click Upload button", "info")
+        flash("Make sure you are selecting atleast 1 file with proper .xls Format AND Click Upload button", "info")
         return render_template('index.html')
 
 @cross_origin()
