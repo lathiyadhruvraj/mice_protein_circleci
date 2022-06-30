@@ -1,0 +1,208 @@
+2022-06-28/14:57:11		Start of Validation on files for prediction!!
+2022-06-28/14:57:12		Raw Data Validation Complete!!
+2022-06-28/14:57:12		Creating Prediction_Database and tables on the basis of given schema!!!
+2022-06-28/14:57:12		Table creation Completed!!
+2022-06-28/14:57:12		Insertion of Data into Table started!!!!
+2022-06-28/14:57:12		Insertion in Table completed!!!
+2022-06-28/14:57:12		Deleting Good Data Folder!!!
+2022-06-28/14:57:12		Good_Data folder deleted!!!
+2022-06-28/14:57:12		Moving bad files to Archive and deleting Bad_Data folder!!!
+2022-06-28/14:57:12		Bad files moved to archive!! Bad folder Deleted!!
+2022-06-28/14:57:12		Validation Operation completed!!
+2022-06-28/14:57:12		Extracting csv file from table
+2022-06-28/14:57:12		Deleted Old Files From Directories Prediction_Output_File, Prediction_FileFromDB and plots
+2022-06-30/18:05:38		Start of Validation on files for prediction!!
+2022-06-30/18:05:39		Raw Data Validation Complete!!
+2022-06-30/18:05:39		Creating Prediction_Database and tables on the basis of given schema!!!
+2022-06-30/18:05:49		Table creation Completed!!
+2022-06-30/18:05:49		Insertion of Data into Table started!!!!
+2022-06-30/18:06:05		Insertion in Table completed!!!
+2022-06-30/18:06:05		Deleting Good Data Folder!!!
+2022-06-30/18:06:05		Good_Data folder deleted!!!
+2022-06-30/18:06:05		Moving bad files to Archive and deleting Bad_Data folder!!!
+2022-06-30/18:06:05		Bad files moved to archive!! Bad folder Deleted!!
+2022-06-30/18:06:05		Validation Operation completed!!
+2022-06-30/18:06:05		Extracting csv file from table
+2022-06-30/18:06:05		Deleted Old Files From Directories Prediction_Output_File, Prediction_FileFromDB and plots
+2022-06-30/18:06:05		Start of Prediction
+2022-06-30/18:06:05		Entered the get_data method of the Data_Getter class
+2022-06-30/18:06:05		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-30/18:06:05		Entered the remove_columns method of the Preprocessor class
+2022-06-30/18:06:05		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-30/18:06:05		Entered the is_null_present method of the Preprocessor class
+2022-06-30/18:06:05		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-30/18:06:05		Entered the impute_missing_values method of the Preprocessor class
+2022-06-30/18:06:05		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2022-06-30/18:06:05		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-30/18:06:06		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-30/18:06:06		Entered the remove_columns method of the Preprocessor class
+2022-06-30/18:06:06		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-30/18:06:06		Entered the remove_outliers method of the Preprocessor class
+2022-06-30/18:06:07		Exited the remove_outliers method of the Preprocessor class
+2022-06-30/18:06:07		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-30/18:06:11		Exited the reduce_dim method and saved plot at plots\pca_pred_.png
+2022-06-30/18:06:11		Entered the pca_with_comp method of the Preprocessor class
+2022-06-30/18:06:11		TOTAL PCA : -----------------  22
+2022-06-30/18:06:11		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-30/18:06:11		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:11		Model File KMeansloaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File XGBoost1loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File RandomForest4loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File RandomForest2loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File RandomForest0loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File RandomForest3loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		substring not found
+2022-06-30/18:06:12		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/18:06:12		Entered the load_model method of the File_Operation class
+2022-06-30/18:06:12		Model File RandomForest5loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/18:06:12		End of Prediction
+2022-06-30/20:23:01		Start of Validation on files for prediction!!
+2022-06-30/20:23:04		Raw Data Validation Complete!!
+2022-06-30/20:23:04		Creating Prediction_Database and tables on the basis of given schema!!!
+2022-06-30/20:23:15		Table creation Completed!!
+2022-06-30/20:23:15		Insertion of Data into Table started!!!!
+2022-06-30/20:23:32		Insertion in Table completed!!!
+2022-06-30/20:23:32		Deleting Good Data Folder!!!
+2022-06-30/20:23:32		Good_Data folder deleted!!!
+2022-06-30/20:23:32		Moving bad files to Archive and deleting Bad_Data folder!!!
+2022-06-30/20:23:32		Bad files moved to archive!! Bad folder Deleted!!
+2022-06-30/20:23:32		Validation Operation completed!!
+2022-06-30/20:23:32		Extracting csv file from table
+2022-06-30/20:23:32		Deleted Old Files From Directories Prediction_Output_File, Prediction_FileFromDB and plots
+2022-06-30/20:23:32		Start of Prediction
+2022-06-30/20:23:32		Entered the get_data method of the Data_Getter class
+2022-06-30/20:23:32		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-30/20:23:32		Entered the remove_columns method of the Preprocessor class
+2022-06-30/20:23:32		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-30/20:23:32		Entered the is_null_present method of the Preprocessor class
+2022-06-30/20:23:32		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-30/20:23:32		Entered the impute_missing_values method of the Preprocessor class
+2022-06-30/20:23:33		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2022-06-30/20:23:33		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-30/20:23:33		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-30/20:23:33		Entered the remove_columns method of the Preprocessor class
+2022-06-30/20:23:33		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-30/20:23:33		Entered the remove_outliers method of the Preprocessor class
+2022-06-30/20:23:33		Exited the remove_outliers method of the Preprocessor class
+2022-06-30/20:23:33		Entered the reduce_dim_and_plot method of the Preprocessor class
+2022-06-30/20:23:35		Exited the reduce_dim method and saved plot at plots\pca_pred_.png
+2022-06-30/20:23:35		Entered the pca_with_comp method of the Preprocessor class
+2022-06-30/20:23:35		TOTAL PCA : -----------------  22
+2022-06-30/20:23:35		Exited  the pca_with_comp method of the Preprocessor class
+2022-06-30/20:23:35		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:35		Model File KMeansloaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:35		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:35		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:35		Model File XGBoost1loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:35		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:35		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:35		Model File RandomForest4loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:35		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:35		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:35		Model File RandomForest2loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:35		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		substring not found
+2022-06-30/20:23:35		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:35		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:35		Model File RandomForest0loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:36		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:36		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:36		Model File RandomForest3loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:36		Entered the find_correct_model_file method of the File_Operation class
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		substring not found
+2022-06-30/20:23:36		Exited the find_correct_model_file method of the Model_Finder class.
+2022-06-30/20:23:36		Entered the load_model method of the File_Operation class
+2022-06-30/20:23:36		Model File RandomForest5loaded. Exited the load_model method of the Model_Finder class
+2022-06-30/20:23:36		End of Prediction
+2022-06-30/20:23:53		Start of Validation on files for prediction!!
+2022-06-30/20:23:53		Start of DataStax Connection!!
+2022-06-30/20:23:58		Unable to connect to the metadata service at https://1797d442-76c6-425f-80ef-2bc4c520c6f8-asia-south1.db.astra.datastax.com:29080/metadata. Check the cluster status in the cloud console. 

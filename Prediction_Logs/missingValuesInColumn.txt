@@ -1,0 +1,5 @@
+2022-06-28/14:57:12		Missing Values Validation Started!!
+2022-06-30/18:05:39		Missing Values Validation Started!!
+2022-06-30/18:05:39		Everything OK! File moved to Good_Raw
+2022-06-30/20:23:04		Missing Values Validation Started!!
+2022-06-30/20:23:04		Everything OK! File moved to Good_Raw

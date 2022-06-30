@@ -19,3 +19,7 @@
 2022-06-26/00:45:02		Table Table_mice_protein_09272021_170000 created successfully!!
 2022-06-26/00:45:02		Closed database successfully
 2022-06-27/15:55:00		Closed database successfully
+2022-06-30/18:05:49		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-30/18:05:49		Closed database successfully
+2022-06-30/20:23:15		Table Table_mice_protein_09272021_160002 created successfully!!
+2022-06-30/20:23:15		Closed database successfully
