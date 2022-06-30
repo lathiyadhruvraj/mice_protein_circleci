@@ -24,7 +24,7 @@ predict = 0
 upload = 0
 
 @cross_origin()
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['GET'])
 def home():
     return render_template('index.html')
 
