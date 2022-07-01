@@ -47,7 +47,7 @@ def predictRouteClient():
         #     return Response("Prediction File created at %s!!!" % path)
 
         if request.method == 'POST':
-            path = ""
+
             if (request.form.get('button') == "Predict My Files") and (upload == 1):
                 path = "Prediction_Custom_Files"
                 print('custom call')
