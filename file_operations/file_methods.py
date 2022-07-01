@@ -1,7 +1,6 @@
 import pickle
 import os
 import shutil
-import xgboost as xgb
 
 class File_Operation:
 
@@ -22,10 +21,6 @@ class File_Operation:
             else:
                 os.makedirs(path)  #
 
-            # if "XGBoost" in filename:
-            #     with open(path + '/' + filename + '.json', 'wb') as f:
-            #         model.save_model(f)  # save the model to file
-            # else:
             with open(path + '/' + filename + '.sav', 'wb') as f:
                 pickle.dump(model, f)  # save the model to file
             
@@ -49,14 +44,6 @@ class File_Operation:
 
         self.logger_object.log(self.file_object, 'Entered the load_model method of the File_Operation class')
         try:
-            # if "XGBoost" in filename:
-            #     with open(self.model_directory + filename + '/' + filename + '.json', 'rb') as f:
-            #         self.logger_object.log(self.file_object,
-            #                             'Model File ' + filename + 'loaded. Exited the load_model method of the '
-            #                                                         'Model_Finder class') 
-            #         bst = xgb.Booster()  # init model
-            #         return bst.load_model(f)
-            # else:
             with open(self.model_directory + filename + '/' + filename + '.sav', 'rb') as f:
                 self.logger_object.log(self.file_object,
                                     'Model File ' + filename + 'loaded. Exited the load_model method of the '
