@@ -19,3 +19,7 @@
 2022-06-30/23:25:16		Everything OK! File moved to Good_Raw
 2022-06-30/23:39:28		Missing Values Validation Started!!
 2022-06-30/23:39:29		Everything OK! File moved to Good_Raw
+2022-07-01/00:53:00		Missing Values Validation Started!!
+2022-07-01/00:53:00		Everything OK! File moved to Good_Raw
+2022-07-01/13:03:47		Missing Values Validation Started!!
+2022-07-01/13:03:47		Everything OK! File moved to Good_Raw
