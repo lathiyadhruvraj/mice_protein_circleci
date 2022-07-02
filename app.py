@@ -45,9 +45,9 @@ def predictRouteClient():
         #     path = pred.predictionFromModel() # predicting for dataset present in database
 
         #     return Response("Prediction File created at %s!!!" % path)
-
+        path = ""
         if request.method == 'POST':
-
+            
             if (request.form.get('button') == "Predict My Files") and (upload == 1):
                 path = "Prediction_Custom_Files"
                 print('custom call')
