@@ -4,6 +4,7 @@ COPY . .
 
 RUN mkdir -p /Prediction_Logs
 RUN mkdir -p /Prediction_Custom_Files
+RUN mkdir -p /Prediction_Batch_Files
 RUN mkdir -p /Prediction_Database
 RUN mkdir -p /Prediction_FileFromDB
 RUN mkdir -p /Prediction_Output_File
