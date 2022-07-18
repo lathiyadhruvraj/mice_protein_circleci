@@ -1,12 +1,13 @@
 # import sqlite3
 from datetime import datetime
 from os import listdir
-import os
+import os, sys
 import re
 import json
 import shutil
 import pandas as pd
 from Logging_Layer.logger import app_logger
+from Exception import HousingException
 
 
 class Prediction_Data_validation:
@@ -34,23 +35,23 @@ class Prediction_Data_validation:
 
             file.close()
 
-        except ValueError:
+        except ValueError as e:
             file = open("Prediction_Logs/valuesfromSchemaValidationLog.txt", 'a+')
             self.logger.log(file, "ValueError:Value not found inside schema_training.json")
             file.close()
-            raise ValueError
+            raise HousingException(e,sys) from e
 
-        except KeyError:
+        except KeyError as e:
             file = open("Prediction_Logs/valuesfromSchemaValidationLog.txt", 'a+')
             self.logger.log(file, "KeyError:Key value error incorrect key passed")
             file.close()
-            raise KeyError
+            raise HousingException(e,sys) from e
 
         except Exception as e:
             file = open("Prediction_Logs/valuesfromSchemaValidationLog.txt", 'a+')
             self.logger.log(file, str(e))
             file.close()
-            raise e
+            raise HousingException(e,sys) from e 
 
         return LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, NumberofColumns
 
@@ -69,11 +70,14 @@ class Prediction_Data_validation:
             if not os.path.isdir(path):
                 os.makedirs(path)
 
-        except OSError as ex:
+        except OSError as e:
             file = open("Prediction_Logs/GeneralLog.txt", 'a+')
-            self.logger.log(file, "Error while creating Directory %s:" % ex)
+            self.logger.log(file, "Error while creating Directory %s:" % e)
             file.close()
-            raise OSError
+            raise HousingException(e,sys) from e 
+
+        except Exception as e:
+            raise HousingException(e,sys) from e
 
     def deleteExistingGoodDataTrainingFolder(self):
 
@@ -87,11 +91,13 @@ class Prediction_Data_validation:
                 file = open("Prediction_Logs/GeneralLog.txt", 'a+')
                 self.logger.log(file, "GoodRaw directory deleted successfully!!!")
                 file.close()
-        except OSError as s:
+        except OSError as e:
             file = open("Prediction_Logs/GeneralLog.txt", 'a+')
-            self.logger.log(file, "Error while Deleting Directory : %s" % s)
+            self.logger.log(file, "Error while Deleting Directory : %s" % e)
             file.close()
-            raise OSError
+            raise HousingException(e,sys) from e
+        except Exception as e:
+            raise HousingException(e,sys) from e 
 
     def deleteExistingBadDataTrainingFolder(self):
 
@@ -102,11 +108,13 @@ class Prediction_Data_validation:
                 file = open("Prediction_Logs/GeneralLog.txt", 'a+')
                 self.logger.log(file, "BadRaw directory deleted before starting validation!!!")
                 file.close()
-        except OSError as s:
+        except OSError as e:
             file = open("Prediction_Logs/GeneralLog.txt", 'a+')
-            self.logger.log(file, "Error while Deleting Directory : %s" % s)
+            self.logger.log(file, "Error while Deleting Directory : %s" % e)
             file.close()
-            raise OSError
+            raise HousingException(e,sys) from e 
+        except Exception as e:
+            raise HousingException(e,sys) from e 
 
     def moveBadFilesToArchiveBad(self):
 
@@ -136,7 +144,9 @@ class Prediction_Data_validation:
             file = open("Prediction_Logs/GeneralLog.txt", 'a+')
             self.logger.log(file, "Error while moving bad files to archive:: %s" % e)
             file.close()
-            raise OSError
+            raise HousingException(e,sys) from e 
+        except Exception as e:
+            raise HousingException(e,sys) from e 
 
     def validationFileNameRaw(self, regex, LengthOfDateStampInFile, LengthOfTimeStampInFile):
 
@@ -172,7 +182,7 @@ class Prediction_Data_validation:
             f = open("Prediction_Logs/nameValidationLog.txt", 'a+')
             self.logger.log(f, "Error occurred while validating FileName %s" % e)
             f.close()
-            raise e
+            raise HousingException(e,sys) from e 
 
     def validateColumnLength(self, NumberofColumns):
 
@@ -190,16 +200,16 @@ class Prediction_Data_validation:
                     self.logger.log(f, "Invalid Column Length for the file!! File moved to Bad Raw Folder :: %s" % file)
 
             self.logger.log(f, "Column Length Validation Completed!!")
-        except OSError:
+        except OSError as e:
             f = open("Prediction_Logs/columnValidationLog.txt", 'a+')
             self.logger.log(f, "Error Occurred while moving the file :: %s" % OSError)
             f.close()
-            raise OSError
+            raise HousingException(e,sys) from e
         except Exception as e:
             f = open("Prediction_Logs/columnValidationLog.txt", 'a+')
             self.logger.log(f, "Error Occurred:: %s" % e)
             f.close()
-            raise e
+            raise HousingException(e,sys) from e 
 
         f.close()
 
@@ -253,14 +263,14 @@ class Prediction_Data_validation:
                     csv.to_csv("Prediction_Raw_Files_Validated/Good_Raw/" + file, index=None, header=True)
                     self.logger.log(f, "Everything OK! File moved to Good_Raw")
 
-        except OSError:
+        except OSError as e:
             f = open("Prediction_Logs/missingValuesInColumn.txt", 'a+')
             self.logger.log(f, "Error Occurred while moving the file :: %s" % OSError)
             f.close()
-            raise OSError
+            raise HousingException(e,sys) from e 
         except Exception as e:
             f = open("Prediction_Logs/missingValuesInColumn.txt", 'a+')
             self.logger.log(f, "Error Occurred:: %s" % e)
             f.close()
-            raise e
+            raise HousingException(e,sys) from e 
         f.close()

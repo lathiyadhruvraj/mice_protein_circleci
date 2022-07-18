@@ -1,8 +1,9 @@
 from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation
 from DataTypeValidation_Insertion_Prediction.DataTypeValidationPrediction import dBOperation
 from Logging_Layer import logger
-import os
+import os, sys
 from DataStax_Astra_Connect.connect_database import Cassandra
+from Exception import HousingException
 class pred_validation:
     def __init__(self, path):
         self.dir = path
@@ -70,4 +71,4 @@ class pred_validation:
             self.dBOperation.selectingDatafromtableintocsv()
 
         except Exception as e:
-            raise e
+            raise HousingException(e,sys) from e

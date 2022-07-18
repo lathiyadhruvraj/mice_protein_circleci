@@ -4,8 +4,9 @@ from cassandra.auth import PlainTextAuthProvider
 from dotenv import load_dotenv
 from Logging_Layer import logger
 import pandas as pd
-import os 
+import os, sys
 from datetime import datetime
+from Exception import HousingException
 
 class Cassandra:
     def __init__(self, file_object):
@@ -36,7 +37,7 @@ class Cassandra:
         
         except Exception as e:
             self.log_writer.log(self.file_object, str(e))
-            raise e
+            raise HousingException(e,sys) from e 
 
     def fetch_data(self):
         try:
@@ -61,7 +62,7 @@ class Cassandra:
 
         except Exception as e:
             self.log_writer.log(self.file_object, str(e))
-            raise e
+            raise HousingException(e,sys) from e 
 
 
     def data_to_excel(self, data, path):
@@ -88,7 +89,7 @@ class Cassandra:
         
         except Exception as e:
             self.log_writer.log(self.file_object, str(e))
-            raise e
+            raise HousingException(e,sys) from e 
 
     
               

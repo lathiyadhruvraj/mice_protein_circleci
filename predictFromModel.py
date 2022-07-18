@@ -1,5 +1,5 @@
 import json
-import os
+import os, sys
 from datetime import datetime
 import pandas
 import shutil
@@ -8,6 +8,7 @@ from data_preprocessing import preprocessing
 from data_ingestion import data_loader_prediction
 from Logging_Layer import logger
 from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation 
+from Exception import HousingException
 
 class prediction:
 
@@ -84,8 +85,8 @@ class prediction:
                 os.mkdir(os.path.join(os.getcwd(), "Prediction_Batch_Files"))
                 os.mkdir(os.path.join(os.getcwd(), "Prediction_Custom_Files"))
         
-        except Exception as ex:
-            print(ex)
-            self.log_writer.log(self.file_object, 'Error occurred while running the prediction!! Error:: %s' % ex)
-            raise ex
+        except Exception as e:
+            print(e)
+            self.log_writer.log(self.file_object, 'Error occurred while running the prediction!! Error:: %s' % e)
+            raise HousingException(e,sys) from e 
         return path

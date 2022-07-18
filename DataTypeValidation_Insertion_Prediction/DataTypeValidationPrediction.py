@@ -3,8 +3,9 @@ import sqlite3
 # from datetime import datetime
 from Logging_Layer import logger
 from os import listdir
-import os
+import os, sys
 import csv
+from Exception import HousingException
 
 class dBOperation:
 
@@ -23,14 +24,14 @@ class dBOperation:
             self.logger.log(file, "Opened %s database successfully" % DatabaseName)
             file.close()
             return conn
-        except ConnectionError:
+        except ConnectionError as e:
             print("CONNECTION ERROR")
             conn.close()
             
             file = open("Prediction_Logs/DataBaseConnectionLog.txt", 'a+')
             self.logger.log(file, "Error while connecting to database: %s" % ConnectionError)
             file.close()
-            raise ConnectionError
+            raise HousingException(e,sys) from e 
         
 
     def createTableDb(self, column_names):
@@ -87,7 +88,7 @@ class dBOperation:
             file = open("Training_Logs/DataBaseConnectionLog.txt", 'a+')
             self.logger.log(file, "Closed database successfully")
             file.close()
-            raise e
+            raise HousingException(e,sys) from e 
 
     def insertIntoTableGoodData(self):
 
@@ -110,7 +111,7 @@ class dBOperation:
                                                          values=entries))
                             conn.commit()
                         except Exception as e:
-                            raise e
+                            raise HousingException(e,sys) from e 
                     self.logger.log(log_file, " %s: File loaded successfully!!" % file)
                 conn.close()
                 
@@ -122,7 +123,7 @@ class dBOperation:
                 self.logger.log(log_file, "File Moved Successfully %s" % file)
                 log_file.close()
                 conn.close()
-                raise e
+                raise HousingException(e,sys) from e 
 
         log_file.close()
 
@@ -163,4 +164,4 @@ class dBOperation:
 
         except Exception as e:
             self.logger.log(log_file, "Exception in selectingDatafromtableintocsv method. File exporting failed. Error : %s" % e)
-            raise e
+            raise HousingException(e,sys) from e 
