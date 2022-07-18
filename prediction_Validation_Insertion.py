@@ -75,7 +75,7 @@ class pred_validation:
                     self.dBOperation.selectingDatafromtableintocsv()
                     lock.release()
 
-            t4= threading.Thread(table_to_csv)
+            t4= threading.Thread(target=table_to_csv, args=())
             t4.start()
 
         except Exception as e:
