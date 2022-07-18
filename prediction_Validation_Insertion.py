@@ -2,6 +2,7 @@ from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_D
 from DataTypeValidation_Insertion_Prediction.DataTypeValidationPrediction import dBOperation
 from Logging_Layer import logger
 import os, sys
+import threading
 from DataStax_Astra_Connect.connect_database import Cassandra
 from Exception import HousingException
 class pred_validation:
@@ -68,7 +69,14 @@ class pred_validation:
             self.raw_data.deletePredictedFiles() 
             self.log_writer.log(self.file_object, 'Deleted Old Files From Directories Prediction_Output_File, Prediction_FileFromDB and plots')
             # export data in table to csv file
-            self.dBOperation.selectingDatafromtableintocsv()
+            
+            def table_to_csv():
+                with threading.Lock() as lock:
+                    self.dBOperation.selectingDatafromtableintocsv()
+                    lock.release()
+
+            t4= threading.Thread(table_to_csv)
+            t4.start()
 
         except Exception as e:
             raise HousingException(e,sys) from e
