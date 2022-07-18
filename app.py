@@ -79,8 +79,8 @@ def predictRouteClient():
         return Response("Error Occurred! %s" % KeyError)
     except Exception as e:
         predict = 0
-        flash(f"Caught Exception: {e}", "warn")
-        flash("Make sure you are selecting atleast 1 file with proper .xls Format AND Click Upload button", "info")
+        flash(f"Caught Exception: {e} Make sure you are selecting atleast 1 file", "warn")
+        # flash(" with proper .xls Format AND Click Upload button", "info")
         return render_template('index.html')
 
 @cross_origin()
