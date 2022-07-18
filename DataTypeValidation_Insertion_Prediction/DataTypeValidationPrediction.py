@@ -92,7 +92,6 @@ class dBOperation:
 
     def insertIntoTableGoodData(self):
 
-        
         goodFilePath = self.goodFilePath
         badFilePath = self.badFilePath
         only_files = [f for f in listdir(goodFilePath)]
@@ -164,4 +163,4 @@ class dBOperation:
 
         except Exception as e:
             self.logger.log(log_file, "Exception in selectingDatafromtableintocsv method. File exporting failed. Error : %s" % e)
-            raise HousingException(e,sys) from e 
+            raise HousingException(e,sys) from e

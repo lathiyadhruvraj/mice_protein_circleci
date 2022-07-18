@@ -1,10 +1,11 @@
-import os
+import os, sys
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.impute import KNNImputer
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
+from Exception import HousingException
 
 
 # from sklearn.preprocessing import StandardScaler
@@ -34,7 +35,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Column removal Unsuccessful. Exited the remove_columns method of the Preprocessor '
                                    'class')
-            raise Exception()
+            raise HousingException(e,sys) from e
 
     def separate_label_feature(self, data, label_column_name):
 
@@ -54,7 +55,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Label Separation Unsuccessful. Exited the separate_label_feature method of the '
                                    'Preprocessor class')
-            raise Exception()
+            raise HousingException(e,sys) from e 
 
     def is_null_present(self, data):
 
@@ -83,7 +84,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Finding missing values failed. Exited the is_null_present method of the '
                                    'Preprocessor class')
-            raise Exception()
+            raise HousingException(e,sys) from e 
 
     def impute_missing_values(self, data):
 
@@ -105,7 +106,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Imputing missing values failed. Exited the impute_missing_values method of the '
                                    'Preprocessor class')
-            raise Exception()
+            raise HousingException(e,sys) from e
 
     def get_columns_with_zero_std_deviation(self, data):
 
@@ -130,7 +131,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Column search for Standard Deviation of Zero Failed. Exited the '
                                    'get_columns_with_zero_std_deviation method of the Preprocessor class')
-            raise Exception()
+            raise HousingException(e,sys) from e
 
     def reduce_dim_and_plot(self, data, file_name):
         self.logger_object.log(self.file_object,
@@ -161,7 +162,7 @@ class Preprocessor:
                                    'Exception occurred in reduce_dim method of the '
                                    'Preprocessor class. Exception message:  ' + str(e))
 
-            raise Exception()
+            raise HousingException(e,sys) from e 
 
     def remove_outliers(self, data):
         try:
@@ -190,8 +191,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Exception occurred in remove_outliers method of the '
                                    'Preprocessor class. Exception message:  ' + str(e))
-            raise Exception()
-
+            raise HousingException(e,sys) from e 
     def cal_components(self, ratio, score):
         try:
             self.logger_object.log(self.file_object, 'Entered the cal_components method of the Preprocessor class')
@@ -216,7 +216,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Exception occurred in cal_components method of the '
                                    'Preprocessor class. Exception message:  ' + str(e))
-            raise Exception()
+            raise HousingException(e,sys) from e 
 
     def pca_with_comp(self, data, no):
         try:
@@ -234,7 +234,7 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Exception occurred in pca_with_comp method of the '
                                    'Preprocessor class. Exception message:  ' + str(e))
-            raise Exception()
+            raise HousingException(e,sys) from e 
 
     def encode_label(self, Y):
         try:
@@ -250,4 +250,4 @@ class Preprocessor:
             self.logger_object.log(self.file_object,
                                    'Exception occurred in encode_label method of the '
                                    'Preprocessor class. Exception message:  ' + str(e))
-            raise Exception()
+            raise HousingException(e,sys) from e

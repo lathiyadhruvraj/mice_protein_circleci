@@ -1,5 +1,6 @@
 import pandas as pd
-import os
+import os, sys
+from Exception import HousingException
 class Data_Getter_Pred:
 
     def __init__(self, file_object, logger_object, file):
@@ -22,4 +23,5 @@ class Data_Getter_Pred:
                                                      ' Exception message: ' + str(e))
             self.logger_object.log(self.file_object,
                                    'Data Load Unsuccessful.Exited the get_data method of the Data_Getter class')
-            raise Exception()
+            raise HousingException(e,sys) from e  
+

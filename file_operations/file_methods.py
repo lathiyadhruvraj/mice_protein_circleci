@@ -1,6 +1,7 @@
 import pickle
-import os
+import os, sys
 import shutil
+from Exception import HousingException
 
 class File_Operation:
 
@@ -38,7 +39,7 @@ class File_Operation:
             self.logger_object.log(self.file_object,
                                    'Model File ' + filename + 'could not be saved. Exited the save_model method of '
                                                               'the Model_Finder class') 
-            raise Exception()
+            raise HousingException(e,sys) from e
 
     def load_model(self, filename):
 
@@ -56,7 +57,7 @@ class File_Operation:
             self.logger_object.log(self.file_object,
                                    'Model File ' + filename + 'could not be saved. Exited the load_model method of '
                                                               'the Model_Finder class') 
-            raise Exception()
+            raise HousingException(e,sys) from e
 
     def find_correct_model_file(self, cluster_number):
 
@@ -85,4 +86,4 @@ class File_Operation:
                                    'Exception message:  ' + str(e))
             self.logger_object.log(self.file_object,
                                    'Exited the find_correct_model_file method of the Model_Finder class with Failure')
-            raise Exception()
+            raise HousingException(e,sys) from e
