@@ -69,14 +69,8 @@ class pred_validation:
             self.raw_data.deletePredictedFiles() 
             self.log_writer.log(self.file_object, 'Deleted Old Files From Directories Prediction_Output_File, Prediction_FileFromDB and plots')
             # export data in table to csv file
-            
-            def table_to_csv():
-                with threading.Lock() as lock:
-                    self.dBOperation.selectingDatafromtableintocsv()
-                    lock.release()
-
-            t4= threading.Thread(target=table_to_csv, args=())
-            t4.start()
+        
+            self.dBOperation.selectingDatafromtableintocsv()
 
         except Exception as e:
             raise HousingException(e,sys) from e
