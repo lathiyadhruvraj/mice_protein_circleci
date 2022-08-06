@@ -29,7 +29,7 @@ class Prediction_Data_validation:
             column_names = dic['ColName']
             NumberofColumns = dic['NumberofColumns']
 
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt", 'a+')
+            file = open("Prediction_Logs/valuesfromSchemaValidationLog.txt", 'a+')
             message = "LengthOfDateStampInFile:: %s" % LengthOfDateStampInFile + "\t" + "LengthOfTimeStampInFile:: %s" % LengthOfTimeStampInFile + "\t " + "NumberofColumns:: %s" % NumberofColumns + "\n"
             self.logger.log(file, message)
 
