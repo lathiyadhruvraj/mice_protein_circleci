@@ -7,7 +7,9 @@ from file_operations import file_methods
 from data_preprocessing import preprocessing
 from data_ingestion import data_loader_prediction
 from Logging_Layer import logger
-from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation 
+from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation
+import pandas as pd
+import glob 
 from Exception import HousingException
 
 class prediction:
@@ -24,6 +26,7 @@ class prediction:
 
             for file in only_files:
                 print(file)
+                
                 self.log_writer.log(self.file_object, 'Start of Prediction')
                 data_getter = data_loader_prediction.Data_Getter_Pred(self.file_object, self.log_writer, file)
                 data = data_getter.get_data()
@@ -84,6 +87,13 @@ class prediction:
                 shutil.rmtree("Prediction_Custom_Files")
                 os.mkdir(os.path.join(os.getcwd(), "Prediction_Batch_Files"))
                 os.mkdir(os.path.join(os.getcwd(), "Prediction_Custom_Files"))
+            
+            # dir = os.path.join(os.getcwd(),"Prediction_Output_File")
+            # all_filenames = os.listdir(dir)
+            # #combine all files in the list
+            # combined_csv = pd.concat([pd.read_csv(os.path.join(dir, f)) for f in all_filenames])
+            # #export to csv
+            # combined_csv.to_csv(os.path.join(os.getcwd(), "templates", "Predicted_file.csv"), index=False)
         
         except Exception as e:
             print(e)

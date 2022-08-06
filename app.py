@@ -1,6 +1,6 @@
-from flask.helpers import send_file
+# from flask.helpers import send_file
 from werkzeug.utils import secure_filename
-from flask import Flask, request, render_template, send_file, flash
+from flask import Flask, request, render_template, send_file,  flash
 from flask import Response
 import shutil
 import os
@@ -33,6 +33,10 @@ def home():
 def predictRouteClient():
     global predict, upload
     try:
+        zip_path = os.path.join(os.getcwd(), "Prediction_Files.zip")
+        if os.path.exists(zip_path):
+            print(f"Removing old {zip_path}")
+            os.remove(zip_path)
         # if request.json is not None:
         #     path = request.json['filepath']
 
@@ -45,18 +49,30 @@ def predictRouteClient():
         #     path = pred.predictionFromModel() # predicting for dataset present in database
 
         #     return Response("Prediction File created at %s!!!" % path)
+        path_list = ["Prediction_Logs", "Prediction_Custom_Files", "Prediction_Batch_Files",
+                    "Prediction_Database", "Prediction_FileFromDB",
+                    "Prediction_Output_File",
+                    "Prediction_Raw_Files_Validated",
+                    "Prediction_Raw_Files_Validated/Good_Raw",
+                    "Prediction_Raw_Files_Validated/Bad_Raw",
+                    "PredictionArchivedBadData"]
+
+        for path in path_list:
+            os.makedirs(os.path.join(os.getcwd(), path) , exist_ok=True)
         path = ""
         if request.method == 'POST':
             
             if (request.form.get('button') == "Predict My Files") and (upload == 1):
-                path = "Prediction_Custom_Files"
+                path="Prediction_Custom_Files"
                 print('custom call')
             elif request.form.get('button') == "Predict Default Files":
                 flash("DATASTAX ASTRA Hibernates the database if not used with in 24 hrs.", "info")
                 flash("Contact 7383857575 to activate & see it working", "info")
                 path = "Prediction_Batch_Files"
+                # path_lst.append("Prediction_Batch_Files")
                 print('default call')
             
+
             predict, upload = 1, 0
             
             pred_val = pred_validation(path)  # object initialization
@@ -66,6 +82,7 @@ def predictRouteClient():
             pred = prediction(path)  # object initialization
 
             pred.predictionFromModel()  # predicting for dataset present in database
+
 
             flash("Prediction files are ready! You can download !", "success")
             return render_template('index.html')
@@ -161,11 +178,14 @@ def download_file():
             predict = 0
             
             shutil.make_archive("Prediction_Files", "zip", "Prediction_Output_File")
-
+            # dir = os.path.join(os.getcwd(), "Prediction_Output_File")
+            # files = os.listdir(dir)
+            
+            # return send_from_directory( dir, files[0], as_attachment=True)
 
             return send_file('Prediction_Files.zip',
                     mimetype = 'zip',
-                    attachment_filename= 'Prediction_Files.zip',
+                    download_name= "Prediction_Files.zip",
                     as_attachment = True)
            
         else:
