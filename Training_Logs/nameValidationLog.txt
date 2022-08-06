@@ -1,6 +1,0 @@
-2022-06-19/22:44:04		Valid File name!! File moved to GoodRaw Folder :: mice_protein_19062022_224359.xls
-2022-06-25/22:00:26		Valid File name!! File moved to GoodRaw Folder :: mice_protein_25062022_220019.xls
-2022-06-25/22:49:10		Valid File name!! File moved to GoodRaw Folder :: mice_protein_25062022_224907.xls
-2022-06-25/23:33:30		Valid File name!! File moved to GoodRaw Folder :: mice_protein_25062022_233327.xls
-2022-06-26/00:03:30		Valid File name!! File moved to GoodRaw Folder :: mice_protein_26062022_000327.xls
-2022-06-26/00:04:44		Valid File name!! File moved to GoodRaw Folder :: mice_protein_26062022_000441.xls
