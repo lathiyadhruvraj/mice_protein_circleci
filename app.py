@@ -105,6 +105,19 @@ def predictRouteClient():
 def trainRouteClient():
     try:
         if request.json['folderPath'] is not None:
+
+            path_list =["Training_Logs",
+                        "Training_Batch_Files",
+                        "Training_Database",
+                        "Training_FileFromDB",
+                        "Training_Raw_Files_Validated",
+                        "Training_Raw_Files_Validated/Good_Raw",
+                        "Training_Raw_Files_Validated/Bad_Raw",
+                        "TrainingArchivedBadData"]
+
+            for path in path_list:
+                os.makedirs(os.path.join(os.getcwd(), path) , exist_ok=True)
+
             path = request.json['folderPath']
             # path = "Training_Batch_Files"
             # path = json.loads(path_str)
