@@ -44,7 +44,7 @@ class dBOperation:
                 os.remove(path_to_file)
 
             only_files = [f for f in listdir(self.goodFilePath)]
-            file = open("Training_Logs/DbTableCreateLog.txt", 'a+')
+            file = open("Prediction_Logs/DbTableCreateLog.txt", 'a+')
 
             for filename in only_files: 
                 tablename = "Table_" + str(filename.split(".")[0] )
@@ -54,7 +54,7 @@ class dBOperation:
                 # c.execute("SELECT count(name)  FROM sqlite_master WHERE type = 'table' AND name = 'Good_Raw_Data'")
                 # if c.fetchone()[0] == 1:
                 #     conn.close()
-                #     file = open("Training_Logs/DbTableCreateLog.txt", 'a+')
+                #     file = open("Prediction_Logs/DbTableCreateLog.txt", 'a+')
                 #     self.logger.log(file, "Tables created successfully!!")
                 #
                 #     self.logger.log(file, "Closed %s database successfully" % DatabaseName)
@@ -82,7 +82,7 @@ class dBOperation:
             file.close()
 
         except Exception as e:
-            file = open("Training_Logs/DbTableCreateLog.txt", 'a+')
+            file = open("Prediction_Logs/DbTableCreateLog.txt", 'a+')
             self.logger.log(file, "Error while creating table: %s " % e)
             file.close()
             file = open("Training_Logs/DataBaseConnectionLog.txt", 'a+')
