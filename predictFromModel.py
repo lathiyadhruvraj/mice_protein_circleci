@@ -22,7 +22,7 @@ class prediction:
     def predictionFromModel(self):
         
         try:
-            only_files = [f for f in os.listdir("Prediction_FileFromDB/")]
+            only_files = [f for f in os.listdir(os.path.join(os.getcwd(),"Prediction_FileFromDB"))]
 
             for file in only_files:
                 print(file)

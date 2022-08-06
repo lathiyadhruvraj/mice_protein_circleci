@@ -13,7 +13,7 @@ class Data_Getter_Pred:
 
     def get_data(self):
         self.logger_object.log(self.file_object, 'Entered the get_data method of the Data_Getter class')
-        file_path = os.path.join(self.prediction_file, self.file)
+        file_path = os.path.join(os.getcwd(), self.prediction_file, self.file)
         try:
             if os.path.isfile(file_path):
                 # file_path.seek(0)
