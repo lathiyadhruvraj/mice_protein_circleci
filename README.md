@@ -11,3 +11,6 @@ implementing circleci CI/CD for mice_protein project and on aws beanstalk
 
 ##
 <img src="screenshots\mice_docker.PNG" alt="p1" width="100%"> docker images 1- circleci, 1- aws
+
+##
+<img src="screenshots\mice_ci_process.PNG" alt="p1" width="100%"> circleci running
